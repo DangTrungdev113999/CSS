@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: black;
+  padding: 50px;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+section p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  height: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:befor {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+
+#progressbar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}

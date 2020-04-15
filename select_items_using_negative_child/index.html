@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTFf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+      font-size: 50px;
+      }
+      .parent div:nth-child(2n) {
+      color: blue;
+      }
+      .parent div:nth-child(2n-1) {
+      color: red;
+      }
+      .parent div:nth-child(-n+5) {
+      color: green; <!-- Chọn phần tử 1 đến 5 -->
+      }
+      .parent div:not(:nth-child(-n+5)) {
+      color: yellow; <!-- Chọn phần tử ngoại từ 1 đến 5 -->
+      }
+      .parent div:nth-child(n+3):nth-child(-n+5) {
+      color: red; <!--Chọn phần tử 3 đến 5-->
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent" >
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+  </body>
+</html>
