@@ -6,27 +6,30 @@
     <title>Document</title>
     <style>
       .parent {
-      font-size: 50px;
+        font-size: 50px;
       }
       .parent div:nth-child(2n) {
-      color: blue;
+        color: blue;
       }
       .parent div:nth-child(2n-1) {
-      color: red;
+        color: red;
       }
-      .parent div:nth-child(-n+5) {
-      color: green; <!-- Chọn phần tử 1 đến 5 -->
+      /* <!-- Chọn phần tử 1 đến 5 --> */
+      .parent div:nth-child(-n + 5) {
+        color: green;
       }
-      .parent div:not(:nth-child(-n+5)) {
-      color: yellow; <!-- Chọn phần tử ngoại từ 1 đến 5 -->
+      /* <!-- Chọn phần tử ngoại từ 1 đến 5 --> */
+      .parent div:not(:nth-child(-n + 5)) {
+        color: yellow;
       }
-      .parent div:nth-child(n+3):nth-child(-n+5) {
-      color: red; <!--Chọn phần tử 3 đến 5-->
+      /* <!--Chọn phần tử 3 đến 5--> */
+      .parent div:nth-child(n + 3):nth-child(-n + 5) {
+        color: red;
       }
     </style>
   </head>
   <body>
-    <div class="parent" >
+    <div class="parent">
       <div>1</div>
       <div>2</div>
       <div>3</div>
