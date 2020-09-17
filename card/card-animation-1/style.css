@@ -1,0 +1,85 @@
+/* Reset */
+*,
+*:hover,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "RobotoDraft", "Roboto", sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 14rem;
+  height: 18rem;
+  position: relative;
+  background-color: #fff;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+.card__image {
+  width: 14rem;
+  height: 6rem;
+  background-image: url("https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: height 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.card__description {
+  width: 14rem;
+  height: 12rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: height 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.card__description h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.card__description p {
+  font-size: 1.2rem;
+}
+.card__icon {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #000;
+  transition: all 0.4s ease-in-out;
+}
+.card__icon:hover {
+  background-color: blue;
+}
+.card:hover .card__image {
+  height: 18rem;
+}
+.card:hover .card__description {
+  height: 0;
+}
+.card:hover .card__icon {
+  background-color: #fff;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

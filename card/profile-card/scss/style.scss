@@ -1,4 +1,6 @@
 /* PROFILE CARD */
+@import "./options";
+@import "./mixin";
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
 .profile-card-container {
@@ -13,7 +15,7 @@
 
   .card {
     background-color: #222831;
-    height: 37rem;
+    height: auto;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
