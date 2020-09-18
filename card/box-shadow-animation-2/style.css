@@ -1,0 +1,104 @@
+/* Reset */
+*,
+*:hover,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(#192824 30%, #192824 30%);
+  background-size: 2px 3px;
+  color: #22d2a0;
+}
+
+@-webkit-keyframes shadow-ware {
+  0% {
+    border: 3px solid #22d2a0;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #1fc11b, 20px -20px 0 -3px #192824, 20px -20px #ffd913, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #ff5555;
+  }
+  20% {
+    border: 3px solid #ff5555;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #22d2a0, 20px -20px 0 -3px #192824, 20px -20px #1fc11b, 30px -30px 0 -3px #192824, 30px -30px #ffd913, 40px -40px 0 -3px #192824, 40px -40px #ff9c55;
+  }
+  40% {
+    border: 3px solid #ff9c55;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #ff5555, 20px -20px 0 -3px #192824, 20px -20px #22d2a0, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #ffd913;
+  }
+  60% {
+    border: 3px solid #ffd913;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #ff9c55, 20px -20px 0 -3px #192824, 20px -20px #ff5555, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #1fc11b;
+  }
+  80% {
+    border: 3px solid #1fc11b;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #ffd913, 20px -20px 0 -3px #192824, 20px -20px #ff9c55, 30px -30px 0 -3px #192824, 30px -30px #ff5555, 40px -40px 0 -3px #192824, 40px -40px #22d2a0;
+  }
+  100% {
+    border: 3px solid #22d2a0;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #1fc11b, 20px -20px 0 -3px #192824, 20px -20px #ffd913, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #ff5555;
+  }
+}
+@keyframes shadow-ware {
+  0% {
+    border: 3px solid #22d2a0;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #1fc11b, 20px -20px 0 -3px #192824, 20px -20px #ffd913, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #ff5555;
+  }
+  20% {
+    border: 3px solid #ff5555;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #22d2a0, 20px -20px 0 -3px #192824, 20px -20px #1fc11b, 30px -30px 0 -3px #192824, 30px -30px #ffd913, 40px -40px 0 -3px #192824, 40px -40px #ff9c55;
+  }
+  40% {
+    border: 3px solid #ff9c55;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #ff5555, 20px -20px 0 -3px #192824, 20px -20px #22d2a0, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #ffd913;
+  }
+  60% {
+    border: 3px solid #ffd913;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #ff9c55, 20px -20px 0 -3px #192824, 20px -20px #ff5555, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #1fc11b;
+  }
+  80% {
+    border: 3px solid #1fc11b;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #ffd913, 20px -20px 0 -3px #192824, 20px -20px #ff9c55, 30px -30px 0 -3px #192824, 30px -30px #ff5555, 40px -40px 0 -3px #192824, 40px -40px #22d2a0;
+  }
+  100% {
+    border: 3px solid #22d2a0;
+    box-shadow: 10px -10px 0 -3px #192824, 10px -10px #1fc11b, 20px -20px 0 -3px #192824, 20px -20px #ffd913, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #ff5555;
+  }
+}
+.card {
+  width: 300px;
+  min-height: 90px;
+  padding: 15px;
+  border: 3px solid #22d2a0;
+  box-shadow: 10px -10px 0 -3px #192824, 10px -10px #1fc11b, 20px -20px 0 -3px #192824, 20px -20px #ffd913, 30px -30px 0 -3px #192824, 30px -30px #ff9c55, 40px -40px 0 -3px #192824, 40px -40px #ff5555;
+  cursor: pointer;
+}
+.card p {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.card h2 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.card:hover {
+  -webkit-animation-name: shadow-ware;
+  animation-name: shadow-ware;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

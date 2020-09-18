@@ -1,90 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=K2D:500&subset=latin-ext");
 body {
-  background-color: #f2f2f2;
-  font-family: "RobotoDraft", "Roboto", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-h5 {
-  margin: 0px;
-  font-size: 1.4em;
-  font-weight: 700;
-}
-
-p {
-  font-size: 12px;
-}
-
-.center {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.property-card {
-  height: 18em;
-  width: 14em;
+  background: #233d4d;
+  min-height: 100vh;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-family: K2D, Arial;
+}
+
+.gallery-box-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 0;
+  flex: 0 1 90%;
+  flex-wrap: wrap;
+}
+
+.gallery-box {
+  display: block;
+  color: #fff;
+  -webkit-box-flex: 0;
+  flex: 0 1 calc(25% - 15px);
+  height: 400px;
+  background: #fea200;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
   position: relative;
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 }
-
-.property-image {
-  height: 6em;
-  width: 14em;
-  padding: 1em 2em;
-  position: Absolute;
-  top: 0px;
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url("https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media screen and (max-width: 1200px) {
+  .gallery-box {
+    -webkit-box-flex: 0;
+    flex: 0 1 calc(50% - 15px);
+    margin: 15px 0;
+  }
 }
-
-.property-description {
-  background-color: #fafafc;
-  height: 12em;
-  width: 14em;
+@media screen and (max-width: 640px) {
+  .gallery-box {
+    -webkit-box-flex: 0;
+    flex: 0 1 calc(100% - 15px);
+  }
+}
+.gallery-box__img-container {
+  display: block;
+  width: 135%;
+  height: 350px;
+  background: #fff;
+  border-radius: 0 0 40px 40px;
+  border: 2px solid #fffff8;
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
   position: absolute;
-  bottom: 0em;
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-  text-align: center;
+  left: -15%;
+  top: -75px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  overflow: hidden;
 }
-
-.property-social-icons {
-  width: 1em;
-  height: 1em;
-  background-color: black;
+@media screen and (max-width: 1200px) {
+  .gallery-box__img-container {
+    height: 420px;
+    top: -180px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .gallery-box__img-container {
+    height: 420px;
+    top: -120px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gallery-box__img-container {
+    height: 450px;
+    top: -190px;
+  }
+}
+.gallery-box__img {
+  display: block;
+  width: 100%;
+  -webkit-transform: rotate(-25deg) scale(1.1);
+  transform: rotate(-25deg) scale(1.1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.gallery-box__text-wrapper {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   position: absolute;
-  bottom: 1em;
-  left: 1em;
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  left: 15px;
+  top: 250px;
+  width: 80%;
 }
-
-.property-card:hover .property-description {
-  height: 0em;
-  padding: 0px 1em;
+.gallery-box__text {
+  font-weight: 500;
+  font-size: 22px;
+  padding: 8px 0;
+  box-shadow: 8px 0 0 rgba(0, 0, 0, 0.7), -8px 0 0 rgba(0, 0, 0, 0.7);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  line-height: 2;
+  background: rgba(0, 0, 0, 0.7);
 }
-.property-card:hover .property-image {
-  height: 18em;
+@media screen and (max-width: 900px) {
+  .gallery-box__text {
+    font-size: 20px;
+  }
 }
-
-.property-card:hover .property-social-icons {
-  background-color: white;
+.gallery-box:hover .gallery-box__img-container {
+  width: 110%;
+  height: 450px;
+  border-radius: 0;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  left: -2px;
+  top: -120px;
 }
-
-.property-card:hover .property-social-icons:hover {
-  background-color: blue;
-  cursor: pointer;
+.gallery-box:hover .gallery-box__img {
+  display: block;
+  width: 100%;
+  -webkit-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+}
+.gallery-box:hover .gallery-box__text-wrapper {
+  top: 288px;
 }

@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "scss/style.scss",
+    "scss/_mixin.scss",
+    "scss/_variable.scss"
+  ],
+  "names": [],
+  "mappings": "AAIA;AACA;AAAA;AAAA;EAGE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;ECuCA,WAD4B;EAE5B;EACA;EDvCA;EACA;EACA,OEvBQ;;;AF0BV;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EChCE;EAeF;;ADsBA;EACE;EACA;EACA;;AAEF;EACE;EACA;;AAEF;EACE;EACA;EACA",
+  "file": "style.css"
+}
